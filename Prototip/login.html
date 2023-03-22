@@ -32,7 +32,7 @@
         </div>
       </div>
     </nav>
-    <form class="max-w-md mx-auto mt-10">
+    <form class="max-w-md mx-auto mt-10" onsubmit="window.location.href = 'reset-password.html'; return false;">
       <div class="mb-4">
         <label class="block text-gray-700 font-bold mb-2" for="username">
           Korisničko ime
@@ -41,7 +41,7 @@
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="ime"
           type="text"
-          placeholder="Unesite ime"
+          placeholder="Unesite korisnicko ime"
         />
       </div>
       <div class="mb-4">
@@ -52,7 +52,7 @@
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="prezime"
           type="password"
-          placeholder="Unesite prezime"
+          placeholder="Unesite šifru"
         />
       </div>
       <div class="flex items-center justify-center">
@@ -60,7 +60,7 @@
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
         >
-          Pošalji
+          Potvrdi
         </button>
       </div>
     </form>
