@@ -32,27 +32,61 @@
         </div>
       </div>
     </nav>
-    <form class="max-w-md mx-auto mt-10">
+    <h2 class="text-center text-3xl my-3"> Kreiraj takmičara</h2>
+    <form class="max-w-md mx-auto mt-10" onsubmit="window.location.href = '#'; return false;">
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="username">
-            Šifra
+        <label class="block text-gray-700 font-bold mb-2" for="name">
+          Ime
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="ime"
-          type="password"
-          placeholder="Unesite novu šifru"
+          id="name"
+          type="text"
+          placeholder="Unesite ime takmičara"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="password">
-          Ponovi šifru
+        <label class="block text-gray-700 font-bold mb-2" for="lastname">
+          Prezime
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="prezime"
-          type="password"
-          placeholder="Ponovite šifru"
+          id="lastname"
+          type="text"
+          placeholder="Unesite prezime takmičara"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="date">
+            Datum rođenja
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="date"
+          type="text"
+          placeholder="Unesite datum rođenja takmičara"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="jmbg">
+            JMBG
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="numdir"
+          type="text"
+          placeholder="Unesite JMBG takmičara"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="clubname">
+          Naziv kluba
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="clubname"
+          type="text"
+          placeholder="Unesite ime kluba takmičara"
         />
       </div>
       <div class="flex items-center justify-center">
