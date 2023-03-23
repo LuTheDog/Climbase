@@ -543,6 +543,10 @@ video {
   margin-top: 1rem;
 }
 
+.ml-11 {
+  margin-left: 2.75rem;
+}
+
 .block {
   display: block;
 }
@@ -641,6 +645,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-items-start {
