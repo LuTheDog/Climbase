@@ -13,14 +13,18 @@
         <div
           class="flex items-center justify-between flex-row h-16 text-primary"
         >
-          <div class="grid items-center justify-items-start grid-flow-col gap-2">
+          <div
+            class="grid items-center justify-items-start grid-flow-col gap-2"
+          >
             <img
               class="max-h-12"
               src="https://cdn.discordapp.com/attachments/790565345136082964/1087873685525909634/Untitled.png"
             />
             <a class="text-primary hover:text-white" href="#"> Climbase </a>
           </div>
-          <div class="grid items-center justify-items-start grid-flow-col gap-2">
+          <div
+            class="grid items-center justify-items-start grid-flow-col gap-2"
+          >
             <a class="hover:text-white" href="#">Home</a>
             <a class="hover:text-white" href="#">About</a>
             <a class="hover:text-white" href="#">Contact</a>
@@ -32,8 +36,11 @@
         </div>
       </div>
     </nav>
-    <h2 class="text-center text-3xl my-3"> Kreiranje organizatora takmičenja</h2>
-    <form class="max-w-md mx-auto mt-10" onsubmit="window.location.href = 'create-organizer-success.html'; return false;">
+    <h2 class="text-center text-3xl my-3">Kreiranje sudije</h2>
+    <form
+      class="max-w-md mx-auto mt-10"
+      onsubmit="window.location.href = '#'; return false;"
+    >
       <div class="mb-4">
         <label class="block text-gray-700 font-bold mb-2" for="username">
           Korisničko ime
@@ -57,14 +64,25 @@
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="organizer_name">
-          Naziv organizatora takmičenja
+        <label class="block text-gray-700 font-bold mb-2" for="name">
+          Ime sudije
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="organizer_name"
+          id="name"
           type="text"
-          placeholder="Naziv organizatora takmičenja"
+          placeholder="Ime sudije"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="lastname">
+          Prezime sudije
+        </label>
+        <input
+          class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="lastname"
+          type="text"
+          placeholder="Prezime sudije"
         />
       </div>
       <div class="flex items-center justify-center">
@@ -74,6 +92,9 @@
         >
           Potvrdi
         </button>
+      </div>
+      <div class="bg-red-300 text-red-800 rounded-lg px-5 py-2 mt-3 text-center">
+        Greska pri kreiranju sudije, prekontrolisite podatke
       </div>
     </form>
   </body>
