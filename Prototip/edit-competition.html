@@ -40,12 +40,24 @@
 
     <div class="w-full flex flex-col items-center justify-center mt-14">
         <div class="w-3/5 flex justify-between">
+      
       <h4 class="ml-11 text-justify justify-self-start text-xl my-3">
           Sudije:
       </h4>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline h-10">
+      <div class="flex flex-row">
+      <select class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline h-10 mr-3">
+      <option value="">Izaberi sudiju</option>
+          <option value="ana_jankovic">Ana Janković</option>
+          <option value="petar_nikolic">Petar Nikolić</option>
+          <option value="milena_stankovic">Milena Stanković</option>
+          <option value="marko_petrovic">Marko Petrović</option>
+        </select>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline h-10 ml-10">
             Dodaj sudiju
         </button>
+      </div>
+       
+          
       </div>
       <table
         class="w-3/5 table-fixed bg-white rounded-lg border-separate border-spacing-0 border-2 border-slate-500 text-lg"
@@ -73,9 +85,18 @@
       <h4 class="ml-11 text-justify justify-self-start text-xl my-3">
           Takmičari:
       </h4>
+      <div class="flex flex-row">
+        <select class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline h-10 mr-5">
+        <option value="">Izaberi takmičara</option>
+            <option value="ana_jankovic">Ana Janković</option>
+            <option value="petar_nikolic">Petar Nikolić</option>
+            <option value="milena_stankovic">Milena Stanković</option>
+            <option value="marko_petrovic">Marko Petrović</option>
+          </select>
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded focus:outline-none focus:shadow-outline h-10">
             Dodaj takmičara
         </button>
+      </div>
       </div>
       <table
         class="w-3/5 table-fixed bg-white rounded-lg border-separate border-spacing-0 border-2 border-slate-500 text-lg"
