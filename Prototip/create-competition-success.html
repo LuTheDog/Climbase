@@ -32,62 +32,71 @@
         </div>
       </div>
     </nav>
-    <h2 class="text-center text-3xl my-3"> Kreiraj takmičara</h2>
-    <form class="max-w-md mx-auto mt-10" onsubmit="window.location.href = 'create-competitor-success.html'; return false;">
+    <h2 class="text-center text-3xl my-3"> Kreiraj takmičenje</h2>
+    <form class="max-w-md mx-auto mt-10" onsubmit="window.location.href = '#'; return false;">
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="name">
-          Ime
+        <label class="block text-gray-700 font-bold mb-2" for="tname">
+          Naziv takmičenja
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="name"
+          id="tname"
           type="text"
-          placeholder="Unesite ime takmičara"
+          placeholder="Unesite naziv takmičenja"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="lastname">
-          Prezime
+        <label class="block text-gray-700 font-bold mb-2" for="address">
+          Adresa
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="lastname"
+          id="address"
           type="text"
-          placeholder="Unesite prezime takmičara"
+          placeholder="Unesite adresu održavanja takmičenja"
         />
       </div>
       <div class="mb-4">
         <label class="block text-gray-700 font-bold mb-2" for="date">
-            Datum rođenja
+            Datum
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="date"
           type="text"
-          placeholder="Unesite datum rođenja takmičara"
+          placeholder="Unesite datum održavanja takmičenja"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="jmbg">
-            JMBG
+        <label class="block text-gray-700 font-bold mb-2" for="numdir">
+            Broj smerova
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           id="numdir"
           type="text"
-          placeholder="Unesite JMBG takmičara"
+          placeholder="Unesite broj smerova na takmičenju"
         />
       </div>
       <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="clubname">
-          Naziv kluba
+        <label class="block text-gray-700 font-bold mb-2" for="time">
+          Vreme održavanja
         </label>
         <input
           class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          id="clubname"
+          id="time"
           type="text"
-          placeholder="Unesite ime kluba takmičara"
+          placeholder="Unesite vreme održavanja takmičenja"
         />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="level">
+          Unesite kategoriju na koju se takmičenje odnosi:
+        </label>
+        <select id="level" name="level">
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+            </select>
       </div>
       <div class="flex items-center justify-center">
         <button
@@ -96,6 +105,9 @@
         >
           Potvrdi
         </button>
+      </div>
+      <div class="bg-green-300 text-green-800 rounded-lg px-5 py-2 mt-3 text-center">
+          Takmicenje uspesno kreirano
       </div>
     </form>
   </body>
